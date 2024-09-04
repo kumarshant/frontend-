@@ -1,0 +1,247 @@
+
+.header{
+  z-index: 100;
+ position: fixed;
+ top: 0px;
+ left: 0;
+ right: 0;
+background-color: white;
+ 
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+
+  border-bottom: 1px solid rgb(215, 215, 215);
+}
+.header-logo{
+  height: 100%;
+  width: 169px;
+display: flex;
+ align-items: center;
+}
+
+.menu{
+  /* padding: 11px; */
+  margin-left: 6px;
+  padding: 5px;
+  height: 22px;
+  border-radius:16px;
+  cursor: pointer;
+}
+.menu:hover{
+  background-color: rgb(210, 207, 207);
+}
+
+.uicon{
+padding-top: 18px;
+padding-bottom: 18px;
+padding-right: 14px;
+padding-left: 13px;
+ height: 18px;
+ width: 88px;
+ cursor: pointer;
+}
+
+.header-search{
+ 
+ flex: 1;
+ max-width: 600px;
+ /* margin-left: 150px;
+ margin-right: 50px; */
+ display: flex;
+ align-items: center;
+ padding-left: 60px;
+}
+
+.search-bar{
+flex: 1;
+height: 34px;
+padding-left: 24px;
+padding-top: 0px;
+padding-bottom: 0px;
+font-size: 16px;
+border: 1px solid;
+border-color: rgb(192, 192, 192);
+border-radius: 19px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+width: 0;
+}
+
+.search-bar::placeholder{
+  font-family: roboto;
+font-size: 15px;
+color: rgb(138, 138, 138);
+}
+.search-button{
+ height: 35px;
+ width: 60px;
+ background-color: rgb(248, 245, 245);
+ border: 1px solid rgb(192, 192, 192);
+ margin-left: -1px;
+ padding-top: 0px;
+ padding-bottom: 0px;
+
+ border-top-right-radius: 20px;
+ border-bottom-right-radius:20px ;
+ margin-right: 15px;
+ cursor: pointer;
+ position: relative;
+}
+.search-button:hover{
+  background-color: rgb(222, 221, 221);
+}
+.search-button .tooltip{
+  position: absolute;
+  background-color: grey;
+  color: white;
+  font-family: roboto;
+  font-size: 12px;
+  padding: 6px;
+  border-radius: 3px;
+  bottom:-30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.search-button:hover .tooltip{
+  opacity: 1;
+}
+.search-icon{
+height: 22px;
+margin-top: 4px;
+}
+
+
+.voice-search-button{
+height: 38px;
+width: 38px;
+border-radius: 19px;
+border: none;
+background-color: rgb(245, 245, 245);
+cursor: pointer;
+position: relative;
+}
+.voice-search-button:hover{
+  background-color: rgb(210, 207, 207);
+}
+
+.voice-search-button .tooltip{
+  position: absolute;
+  background-color: grey;
+  color: white;
+  font-family: roboto;
+  font-size: 12px;
+  padding: 6px;
+  border-radius: 3px;
+   bottom: -30px;
+  left: -40px;
+  white-space:nowrap;
+  opacity:0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+.voice-search-button:hover .tooltip{
+  opacity:1;
+}
+.voice-search-icon{
+height: 22px;
+margin-top: 3px;
+}
+
+
+.header-right{
+/* background-color: aqua; */
+/* width: 200px; */
+display: flex;
+align-items: center;
+justify-content: space-between;
+/* padding-left: 70px; */
+padding-right: 15px;
+flex-shrink: 0;
+}
+.header-create{
+display: flex;
+align-items: center;
+padding-left:15px;
+
+height: 35px;
+width: 90px;
+border-radius: 17.5px;
+border: none ;
+background-color: rgb(245, 245, 245);
+font-family:roboto;
+font-weight: 500;
+ cursor: pointer;
+}
+.header-create:hover{
+  background-color: rgb(210, 207, 207);
+}
+.header-create-plus{
+font-size: xx-large;
+font-weight: lighter;
+padding-bottom: 4px;
+padding-right: 4px;
+}
+
+.bell-icon{
+height: 24px;
+width: 24px;
+border-radius: 18px;
+border: none;
+padding: 6px;
+cursor: pointer;
+margin-left: 8px;
+margin-right: 20px;
+
+}
+.bell-icon:hover{
+  background-color: rgb(210, 207, 207);
+}
+.div-bell-icon{
+  position: relative;
+}
+.div-bell-icon .tooltip{
+  position: absolute;
+  background-color: grey;
+  color: white;
+  font-family: roboto;
+  font-size: 12px;
+  padding: 6px;
+  border-radius: 3px;
+  bottom:-30px;
+  white-space:nowrap;
+  opacity:0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+.div-bell-icon:hover .tooltip{
+  opacity: 1;
+}
+.notification-count{
+  position: absolute;
+  background-color: rgb(199, 5, 5);
+  color: white;
+  font-family: roboto;
+  font-size: 12px;
+  padding-left: 4.5px;
+  padding-right: 4px;
+  border-radius: 8px;
+  top: 5px;
+ right: 21px;
+}
+.profilepic{
+height: 30px;
+border-radius: 15px;
+cursor: pointer;
+margin-right: 3px;
+}
+
+  
